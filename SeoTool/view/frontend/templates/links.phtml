@@ -1,0 +1,5 @@
+<?php /** @var \UK\SeoTool\Block\SeoTool $block */ ?>
+<?php foreach ($block->getHreflangs() as $hreflang): ?>
+    <link rel="alternate" hreflang="<?= $hreflang['locale'] ?>" href="<?= $hreflang['url'] ?>" />
+<?php endforeach; ?>
+
